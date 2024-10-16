@@ -5,6 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nemanja Đordan</title>
         <link rel="stylesheet" href="./sass/main.css">
+        <style>
+            .section-about .top-text {
+              width: 65%;
+              line-height: 26px;
+              font-size: 2rem;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              flex-direction: column;
+              position: absolute;
+              top: 79%;
+              background-color: #E1D7B7;
+              padding: 29px 53px;
+              color: black;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            @media (max-width: 1024px) {
+              .section-about .top-text {
+                left: auto;
+              }
+            }
+            @media (max-width: 768px) {
+              .section-about .top-text {
+                width: calc(100% - 20px);
+                top: 54%;
+              }
+            }
+            @media (max-width: 597px) {
+              .section-about .top-text {
+                top: 50%;
+              }
+            }
+            @media (max-width: 370px) {
+              .section-about .top-text {
+                top: 37%;
+              }
+            }
+            .section-about .top-text span {
+              font-weight: bold;
+              display: inline-block;
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation bar -->
