@@ -1,0 +1,24 @@
+.footer {
+    background-color: $blue;
+    color: $white;
+    padding: 20px;
+    text-align: center;    
+    .footer-text {
+        margin-bottom: 10px;
+        text-align: right;
+        font-size: .8rem
+    }
+    .footer-links {
+        @include flex-column;
+        gap: 10px;   
+    }
+    .footer-link {
+        color: $white;
+        text-decoration: none;
+        font-size: 14px; 
+        &:hover {
+            text-decoration: underline;
+            color: $blueDarkest;
+        }
+    }
+}

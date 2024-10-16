@@ -1,0 +1,23 @@
+.button {
+    padding: 1.2rem 1.7rem;
+    border: 1px solid $blueDarkest;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, 0);
+    transition: all .3s ease;
+    position: relative;
+    a {
+        color: $blueDarkest;
+    }
+}
+.button:hover {
+    cursor: pointer;
+    background-color: $blueDarkest;
+    a {
+        color: $white;
+    }
+}
+.button:active {
+    top: .1rem;
+}

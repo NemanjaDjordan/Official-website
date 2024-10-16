@@ -1,0 +1,88 @@
+.section-portfolio {
+  background-color: $blueDarker;
+  padding: 10rem 0 15rem;
+  .subtitle, .text, .img-wrap {
+    margin: 0 0 2rem;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    font-size: 1.5rem;
+    @include breakpoint(900px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }  
+  .item {
+    background-color: $biege;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    @include flex-column;   
+  }
+  .item:nth-child(1) {
+    grid-column: 1; 
+  }
+  .img-wrap {
+    width: 100%;
+  }
+  .subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .button {
+    margin: 0 0 0 auto;
+  }
+  .text {
+    height: 100%;
+    line-height: 1.1;
+  }
+  .gist {
+    .blob-code-inner {
+      color: $pythonText;
+    }
+    .highlight {
+      background-color: $pythonBG;
+    }
+    span {
+      display: block;
+    }
+  }
+  .blob-num {
+    border-right: .2rem solid $blueDarkest;
+  }
+}
+.raw-files {
+  .item {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    overflow: auto;
+    padding: 0;
+  }
+  .portfolio-active {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+  .close-button {
+    background-color: $biege;
+    font-size: 5rem;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    color: $blueDarkest;
+    z-index: 5;
+    border: 1px solid $blueDarkest;
+    padding: 5px 10px;
+  }
+  .close-button:hover{
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,36 @@
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $point == phone {
+    @media (max-width: $breakpoint-phone) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin flex-column {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-direction: column;
+}

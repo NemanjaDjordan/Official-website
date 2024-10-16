@@ -1,0 +1,16 @@
+.img-wrap {
+  img {
+    width: 100%;
+  }
+}
+.wrapper {
+  max-width: 115rem;
+  width: 100%;
+  margin: 0 auto;
+  @include breakpoint(1200px) {
+    padding: 0 20px;
+  }
+  @include breakpoint(phone) {
+    padding: 0 10px;
+  }
+}

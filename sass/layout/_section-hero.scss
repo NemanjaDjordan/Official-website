@@ -1,0 +1,45 @@
+.section-hero {
+    background-color: $blue;
+    .wrapper {
+        @include flex-column;
+        padding: 15rem 0 30rem;
+        position: relative;
+    }
+    .top, .middle, .bottom {
+        position: relative;
+        left: 100vw;
+        transition: all 1s ease;
+        font-size: 10vw;
+        padding: 0 0 0 20px;
+        color: $white;
+        @include breakpoint(tablet) {
+            font-size: 13vw;
+        }
+        @include breakpoint(phone) {
+            font-size: 13.5vw;
+        }
+        @include breakpoint(460px) {
+            font-size: 14vw;
+        }
+    }
+    .middle {
+        transition: all 1.2s ease;
+        color: $blueDarkest;
+        font-weight: bold;
+    }
+    .bottom {
+        transition: all 1.4s ease;
+    }
+    .name {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        font-size: 2rem;
+        border-bottom: 1px solid $blueDarkest;
+        padding: 0 0 3px 0;
+        color: $white;
+    }
+}
+.section-hero-animate {
+    left: 0 !important;
+}

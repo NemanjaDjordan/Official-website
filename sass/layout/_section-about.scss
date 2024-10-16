@@ -1,0 +1,83 @@
+.section-about {
+    background-color: $blueDarker;
+    padding: 0 0 16rem 0;
+    .wrapper {
+        position: relative;
+        color: $white;
+    }
+    .img-wrap {
+        width: 60%;
+        height: 30vh;
+        background: url('../images/section-about.jpg') no-repeat bottom / cover;
+        margin-left: auto;
+        position: relative;
+        top: -15vh;
+        @include breakpoint(tablet) {
+            width: 80%;
+        }
+        @include breakpoint(phone) {
+            visibility: hidden;
+        }
+    }
+    .top-text {
+        width: 65%;
+        line-height: 26px;
+        font-size: 2rem;
+        @include flex-column;
+        position: absolute;
+        top: 79%;
+        background-color: $biege;
+        padding: 29px 53px;
+        color: $black;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        @include breakpoint(tablet) {
+            left: auto;
+        }
+        @include breakpoint(phone) {
+            width: calc(100% - 20px);
+            top: 54%;
+        }
+        @include breakpoint(597px) {
+            top: 50%;
+        }
+        @include breakpoint(370px) {
+            top: 37%;
+        }
+        span {
+            font-weight: bold;
+            display: inline-block;
+        }
+    }
+    .text:last-child {
+        align-self: flex-end;
+    }
+    .quotes {
+        font-size: 4rem;      
+    }
+    .quotes-first {
+        position: relative;
+        top: 9px;
+        left: -20px;
+    }
+    .quotes-second {
+        align-self: flex-end;
+        position: relative;
+        right: -10px;
+    }
+    .bottom-text {
+        margin: 0 0 0 50%;
+        font-size: 2rem;
+        font-style: italic;
+        padding-right: 30px;
+        line-height: 1.2;
+        display: block;
+        position: relative;
+        top: 10rem;
+        span:last-child {
+            text-align: end;
+        }
+        @include breakpoint(phone) {
+            margin: 0 0 0 20%;
+        }
+    }
+}
