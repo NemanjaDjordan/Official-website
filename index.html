@@ -5,48 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nemanja Đordan</title>
         <link rel="stylesheet" href="./sass/main.css">
-        <style>
-            .section-about .top-text {
-              width: 65%;
-              line-height: 26px;
-              font-size: 2rem;
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-start;
-              flex-direction: column;
-              position: absolute;
-              top: 79%;
-              background-color: #E1D7B7;
-              padding: 29px 53px;
-              color: black;
-              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-            @media (max-width: 1024px) {
-              .section-about .top-text {
-                left: auto;
-              }
-            }
-            @media (max-width: 768px) {
-              .section-about .top-text {
-                width: calc(100% - 20px);
-                top: 54%;
-              }
-            }
-            @media (max-width: 597px) {
-              .section-about .top-text {
-                top: 50%;
-              }
-            }
-            @media (max-width: 370px) {
-              .section-about .top-text {
-                top: 37%;
-              }
-            }
-            .section-about .top-text span {
-              font-weight: bold;
-              display: inline-block;
-            }
-        </style>
     </head>
     <body>
         <!-- Navigation bar -->
@@ -99,8 +57,8 @@
             <section class="section-about" data-name="about">
                 <div class="wrapper">
                     <div class="img-wrap"></div>
-                    <div class="top-text">
-                        <p class="medium-text" style="font-weight: normal; font-style: normal;">My name is <span>Nemanja Đordan</span>. I am a straightforward person – I will work for you in exchange for money. Some of the skills that I possess are listed below.</p>
+                    <div class="top-text" style="width: 65%; max-width: calc(100vw - 20px);">
+                        <p class="medium-text" style="font-weight: normal; font-style: normal;">My name is <span style="font-weight: bold; display: inline-block;">My name is Nemanja Đordan. I am straightforward – I will work for you in exchange for money. Some of the skills that I possess are listed below.</p>
                     </div>
                 </div>
             </section>
